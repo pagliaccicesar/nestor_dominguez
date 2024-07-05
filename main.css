@@ -561,6 +561,11 @@ section {
 
   /*******    seccion tarifas   *****************/
 
+  .precios {
+    padding: 110px 0;
+    background-color: black;
+  }
+
   #reserva {
     color: aqua;
     text-align: center;
