@@ -12,10 +12,6 @@ a:hover {
     color: rgb(37, 3, 254);
 }
   
-  .text-primary {
-    color: rgb(254, 209, 54) !important;
-}
-
 h1 {
     position: absolute;
     font-family: "Comfortaa", sans-serif;
@@ -40,15 +36,15 @@ section {
       rgba(7, 7, 7, 0.1) 99%
     ),
     linear-gradient(40deg, #040a22, #162561, #202e64, #6f7aa6);
-  background-repeat: no-repeat;
-  background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-  display: grid;
-  grid-template-columns: 50% 45%;
-  place-items: center;
-  gap: 60px;
-  min-height: 100vh;
-  padding: 20px 60px;
+      display: grid;
+      grid-template-columns: 50% 45%;
+      place-items: center;
+      gap: 60px;
+      min-height: 100vh;
+      padding: 20px 60px;
 }
 
 /******************** CONTENT *********************/
@@ -266,29 +262,32 @@ section h3.section-subheading {
 .parrafo {
     color: #fff;
 }
+#services .grafico_servicio {
+    padding: 25px;
+    width: 50%;
+    height: auto;
+}
 
 /************** cards traidas de decibel   ********/
 .ustedes {
     padding-top: 110px;
-    
+    background-color: black;
 }
 .ustedes ul {
-  display: flex;
-  gap: auto;
+    display: flex;
+    gap: auto;
    margin: 0 auto;
 }
-
 .ustedes .cards { 
     height: auto;
     max-width: 100%;
-    /*vertical-align: middle;*/
     
-  }
+}
   
   .ustedes .btn {
-    background-color: white;
+    background-color: blue;
     border: 1px solid #cccccc;
-    color: #696969;
+    color: white;
     padding: 0.5rem;
     text-transform: lowercase;
   }
@@ -320,7 +319,7 @@ section h3.section-subheading {
   .ustedes .card {
     width: 300px;
     height: 300px;
-    background-color: white;
+    background-color: aqua;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -328,9 +327,9 @@ section h3.section-subheading {
     overflow: hidden;
     margin: 0 auto;
   }
-  .ustedes .card:hover .card__image {
+  /*.ustedes .card:hover .card__image {
     filter: contrast(100%);
-  }
+  }*/
   .ustedes .card__content {
     display: flex;
     flex: 1 1 auto;
@@ -349,7 +348,7 @@ section h3.section-subheading {
     background-size: cover;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    filter: contrast(70%);
+    /*filter: contrast(70%);*/
     overflow: hidden;
     /*position: relative;*/
     transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
@@ -368,24 +367,7 @@ section h3.section-subheading {
     width: 88%;
     height: auto;
   }
-  .card__image--flowers {    
-    background-image: url(./img/fabicon.png);
-  }
-  .card__image--river {
-    background-image: url(https://unsplash.it/800/600?image=11);
-  }
-  .card__image--record {
-    background-image: url(https://unsplash.it/800/600?image=39);
-  }
-  .card__image--fence {
-    background-image: url(https://unsplash.it/800/600?image=59);
-  }
-  .card__image--fence {
-    background-image: url(https://unsplash.it/800/600?image=59);
-  }
-  .card__image--fence {
-    background-image: url(https://unsplash.it/800/600?image=59);
-  }
+  
   .card__title {
     color: #696969;
     font-size: 1.25rem;
@@ -470,10 +452,21 @@ section h3.section-subheading {
 
 .precios {
     padding: 110px 0;
-    background-color: black;
+    background-image: radial-gradient(
+      circle at 20% 100%,
+      rgba(184, 184, 184, 0.1) 0%,
+      rgba(184, 184, 184, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 99%
+    ),
+    linear-gradient(40deg, #040a22, #162561, #202e64, #6f7aa6);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#reserva {
+#reserva {  
     color: aqua;
     text-align: center;
 }
@@ -532,9 +525,9 @@ section h3.section-subheading {
     background-position: center;
     font-family: "Comfortaa", sans-serif;
 }
-*, *:before, *:after {
+/**, *:before, *:after {
   box-sizing: border-box;
-}
+}*/
 
 .glass1 { 
     width: 100%;
@@ -635,9 +628,9 @@ section h3.section-subheading {
     text-decoration: none;
     color: #212529;    
   }  
-  footer a:hover {
+  /*footer a:hover {
     background: none;
-  }
+  }*/
  
   footer ul.quicklinks {
     font-size: 90%;
