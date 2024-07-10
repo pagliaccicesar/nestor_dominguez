@@ -1,68 +1,75 @@
-(function($) {
-    "use strict"; // Start of use strict
-  
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: (target.offset().top - 54)
-          }, 1000, "easeInOutExpo");
-          return false;
+/* 
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".btn");
+  const modalOverlay = document.querySelector(".modal-overlay");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function() {
+      const modalId = button.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+
+      // Mostrar modal
+      modalOverlay.style.display = "flex";
+      modal.classList.add("active");
+
+      // Agregar evento para cerrar modal con clic en "x"
+      const closeButton = modal.querySelector(".modal-close");
+      if (closeButton) {
+        closeButton.addEventListener("click", function() {
+          closeModal(modal);
+        });
+      }
+
+      // Agregar evento para cerrar modal con tecla "Esc"
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+          closeModal(modal);
         }
-      }
-    });
-  
-    // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function() {
-      $('.navbar-collapse').collapse('hide');
-    });
-  
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-      target: '#mainNav',
-      offset: 54
-    });
-  
-    // Collapse Navbar
-    var navbarCollapse = function() {
-      if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-  
-    // Hide navbar when modals trigger
-    $('.portfolio-modal').on('show.bs.modal', function(e) {
-      $(".navbar").addClass("d-none");
-    })
-    $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-      $(".navbar").removeClass("d-none");
-    })
-  
-  })(jQuery); // End of use strict
-
-  
-  //  js de las card agregadas
-
-  //Functionality for FILTER BUTTONS
-$(document).ready( function () {
-    $('.tabs').find('a').click( function (e) {
-      var theFilter = $(this).data('filter');
-      
-      e.preventDefault();
-      $('.tabs').find('a').removeClass('active');
-      $(this).addClass('active');
-      
-     $('.portfolio').find('li').show(); $('.portfolio').find('li').not(theFilter).hide();
-      
+      });
     });
   });
+
+  // Función para cerrar el modal
+  function closeModal(modal) {
+    modalOverlay.style.display = "none";
+    modal.classList.remove("active");
+  }
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".btn");
+  const modalOverlay = document.querySelector(".modal-overlay");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function() {
+      const modalId = button.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+
+      // Mostrar overlay y modal
+      modalOverlay.style.display = "flex";
+      modal.classList.add("active");
+
+      // Agregar evento para cerrar modal con clic en "x"
+      const closeButton = modal.querySelector(".modal-close");
+      if (closeButton) {
+        closeButton.addEventListener("click", function() {
+          closeModal(modal);
+        });
+      }
+
+      // Agregar evento para cerrar modal con tecla "Esc"
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+          closeModal(modal);
+        }
+      });
+    });
+  });
+
+  // Función para cerrar el modal
+  function closeModal(modal) {
+    modalOverlay.style.display = "none";
+    modal.classList.remove("active");
+  }
+});
 
