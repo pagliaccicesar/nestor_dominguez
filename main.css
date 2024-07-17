@@ -383,7 +383,8 @@ section h3.section-subheading {
   }
   
   .card__title {
-    color: #696969;
+    color: rgb(3, 3, 103);
+    text-align: center;
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: 2px;
@@ -466,7 +467,7 @@ section h3.section-subheading {
 }
   
 
-/*******    seccion tarifas   *****************/
+/****************   seccion tarifas   *****************/
 
 .precios {
     padding: 110px 0;
@@ -483,7 +484,6 @@ section h3.section-subheading {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #reserva {  
     color: aqua;
     text-align: center;
@@ -492,13 +492,12 @@ section h3.section-subheading {
     color: white;
     text-align: center;
 }
-
 .precios .valor {
-    color: #3306fc;
+    color: rgb(3, 3, 103);
     font-size: xx-large;
-    font-weight: 900;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
 }
-
 .boxes {
     margin-top: 60px;
     margin-left: 60px;
@@ -507,34 +506,12 @@ section h3.section-subheading {
     grid-gap: 60px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
 .box {   
     background: aqua;
     text-align: center;
     padding: 1.5rem 4rem;
     box-shadow: whitesmoke;
 }
-/*.precios a {
-  background: #eaeaea;
-  color: #202134;
-  font-size: clamp(0.9rem, 4vw, 1rem);
-  font-weight: 600;
-  border: 0;
-  outline: 0;
-  padding: 8px 14px;
-  border-radius: 7px;
-  transform: scale(1);
-  transition: all 0.4s ease-in;
-  cursor: pointer;
-}
-
-.precios a:is(:hover, :focus) {
-  transform: scale(0.98);
-  background-color: aqua;
-  color: black;
-}*/
-
-
 
 button {
   top: 60px;
@@ -589,16 +566,12 @@ button {
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
-
-
 @-webkit-keyframes shiny-btn1 {
     0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }
-
-
 
  /********    seccion contacto ********/
 
