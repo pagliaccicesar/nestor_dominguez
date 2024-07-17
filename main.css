@@ -55,7 +55,7 @@ section {
 
 .content h2 {
   font-family: "Comfortaa", sans-serif;
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 2.9rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -96,14 +96,14 @@ section {
 .swiper {
   position: relative;
   width: 350px;
-    height: 450px;
+  height: 450px;
 }
 
 .swiper-slide {
   position: relative;
   background-position: center;
   background-size: cover;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 5px solid white;
   user-select: none;
   border-radius: 20px;
 }
@@ -152,11 +152,14 @@ section {
     section {
         padding: 110px 40px 60px;
         gap: 34px;
-      }
+    }
+    .swiper {
+        margin-top: 40px;        
+    }
     .content h2 {
-       
+        margin-top: 80px;
         font-size:large;
-      }
+    }
 }
 
 @media (max-width: 470px) {
@@ -180,7 +183,7 @@ section {
 
 #about {
     padding: 50px 0;
-    background-color: black;
+    background-color: rgb(40, 53, 106);
 }
 
 section h3.section-subheading {
@@ -261,17 +264,28 @@ section h3.section-subheading {
 }
 .parrafo {
     color: #fff;
+    text-align: justify;
 }
 #services .grafico_servicio {
     padding: 25px;
     width: 50%;
     height: auto;
 }
+#services h3 {
+    color: aqua;
+    font-size: 300%;
+}
+@media (max-width: 991px) {
+  #services h3 {
+    font-size: 180%;
+  }
+}
+
 
 /************** cards traidas de decibel   ********/
 .ustedes {
     padding-top: 110px;
-    background-color: black;
+    background-color: rgb(40, 53, 106);
 }
 .ustedes ul {
     display: flex;
@@ -479,6 +493,12 @@ section h3.section-subheading {
     text-align: center;
 }
 
+.precios .valor {
+    color: #3306fc;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
 .boxes {
     margin-top: 60px;
     margin-left: 60px;
@@ -494,34 +514,28 @@ section h3.section-subheading {
     padding: 1.5rem 4rem;
     box-shadow: whitesmoke;
 }
-/*.precios button {    
-    position: relative;
-    top: 60px;
-    left: 60px;   
-    background: aqua;
-    color: #202134;
-    font-size: clamp(0.9rem, 4vw, 1rem);
-    font-weight: 600;
-    border: 0;
-    outline: 0;
-    padding: 8px 14px;
-    border-radius: 7px;
-    transform: scale(1);
-    transition: all 0.4s ease-in;
-    cursor: pointer;
+/*.precios a {
+  background: #eaeaea;
+  color: #202134;
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  padding: 8px 14px;
+  border-radius: 7px;
+  transform: scale(1);
+  transition: all 0.4s ease-in;
+  cursor: pointer;
 }
-  
-.precios button:is(:hover, :focus) {
-    transform: scale(0.98);
-    background-color: blue;
-    color: black;
+
+.precios a:is(:hover, :focus) {
+  transform: scale(0.98);
+  background-color: aqua;
+  color: black;
 }*/
-/* 11 */
-/*.frame {
-*width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}*/
+
+
+
 button {
   top: 60px;
   left: 60px; 
