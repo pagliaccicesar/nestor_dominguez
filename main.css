@@ -413,7 +413,8 @@ section h3.section-subheading {
   .ustedes .card {
     width: 400px;
     height: 460px;
-    background-color: rgb(167, 220, 220);
+    background-color: rgb(40, 53, 106);;
+    /*background-color: rgb(167, 220, 220);*/
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -469,7 +470,8 @@ section h3.section-subheading {
   }
   
   .card__title {
-    color: rgb(3, 3, 103);
+    /*color: rgb(3, 3, 103);*/
+    color: aqua;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 300;
@@ -479,6 +481,8 @@ section h3.section-subheading {
   .ustedes .card__text {
     flex: 1 1 auto;
     font-size: 0.875rem;
+    font-style: italic;
+    color: #fff;
     text-align: justify;
     line-height: 1.5;
     margin-bottom: 1.25rem;
