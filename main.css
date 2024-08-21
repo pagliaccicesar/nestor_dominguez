@@ -813,6 +813,23 @@ button {
   ul.social-buttons li a:hover {
     background-color: rgb(37, 3, 254);
   }
+
+  @media (max-width: 1300px) {
+    footer span.copyright {
+      font-size: 75%;
+      line-height: 30px;     
+    }
+    ul.social-buttons li a {
+      font-size: 17px;
+      line-height: 32px;
+      display: block;
+      width: 30px;
+      height: 30px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
   
 
   /****************   css de sección privacidad    *******************/
